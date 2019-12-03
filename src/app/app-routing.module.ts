@@ -16,6 +16,11 @@ const routes: Routes = [
     path: 'homeIpab',
     loadChildren: () => import('./components/home-ipab/home-ipab.module').then(m => m.HomeIpabModule)
   },
+  {
+    path:'homeMac',
+    loadChildren: () => import('./components/home-mac/home-mac.module').then(m => m.HomeMacModule)
+      
+  },
   {path:'cart', component:CartComponent}
 ];
 
