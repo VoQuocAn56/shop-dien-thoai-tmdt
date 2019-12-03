@@ -15,6 +15,8 @@ export class TopHeaderComponent implements OnInit {
 
   OnGotoHomeIphone(){
     this.router.navigate(['/homeIphone']);
-  
+  }
+  OnGotoHomeIpab(){
+    this.router.navigate(['/homeIpab']);
   }
 }

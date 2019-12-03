@@ -11,7 +11,7 @@ import {HomeBannerAppleComponent} from '../app/components/home/HomeBannerApple/H
 import {IphoneService} from '../app/service/Iphone.service';
 import {HomeIphoneModule} from '../app/components/home-iphone/home-iphone.module';
 import { CartComponent } from './components/cart/cart.component';
-import { FooterComponent } from './components/footer/footer.component'
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [

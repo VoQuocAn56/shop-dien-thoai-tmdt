@@ -1,0 +1,40 @@
+<div class="iphone-content">
+    <div class="top-hd-iphone">
+        <div>
+            <h1 class="top-tittle">iPhone</h1>
+        </div>
+
+        <ul class="category-iphone">
+            <li><a class="iphone-xs" title="">iPhone Xs/Xs Max</a></li>
+            <li><a class="iphone-xr" title="">iPhone XR</a></li>
+            <li><a class="iphone-x" title="">iPhone X</a></li>
+            <li><a class="iphone-8" title="">iPhone 8 / 8 Plus</a></li>
+            <li><a class="iphone-7" title="">iPhone 7 / 7 Plus</a></li>
+            <li><a class="iphone-6s" title="">iPhone 6s / 6s Plus</a></li>
+        </ul>
+    </div>
+
+    <div class="item-content">
+        <div class="list-items" *ngFor="let item of ListCount; let even = even; let last=last"
+            [ngClass]="{'UpdateColor': even, 'last-list':last}">
+
+            <div class="item" *ngFor="let item of ListIphone; let odd = odd, let even = even, let last=last"
+                [ngClass]="{'evenItem': odd, 'last-Item':last}">
+
+                <div class="content" [ngClass]="{'content-odd': odd, 'content-even': even}">
+                    <h3 class="ctname">
+                        <a href="#" title="">{{item.Name}}</a>
+                    </h3>
+                    <p class="ctmh">{{item.Screen}}</p>
+                    <p class="ctbtn">
+                        <a class="fs-apbtn" title="" (click)="onGoToDetailIphone(item)">Xem chi tiết</a>
+                    </p>
+                    <p class="ctpri" id="28994">Giá chỉ {{item.Price}}.000 đ</p>
+                </div>
+                <a href="#">
+                    <img src={{item.img}} alt="iPhone 11 Pro 64GB">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
