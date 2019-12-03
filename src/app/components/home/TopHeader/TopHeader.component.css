@@ -5,6 +5,7 @@
 .top-header-content{
     display: flex;
     justify-content: flex-end;
+    max-height: 50px;
 }
 .top-header-menu{
     margin: 0 auto;
@@ -16,10 +17,15 @@ ul{
 }
 a{
     color: white;
+    height: 50px;
+    line-height: 50px;
+    display: block;
 }
 a:hover{
     color: wheat;
+    cursor: pointer;
 }
 li{
     margin: 15px;
+    max-height: 50px;
 }
