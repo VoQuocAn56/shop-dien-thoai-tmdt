@@ -1,0 +1,276 @@
+.fs-dttop{
+    width: 1519px;
+    height: auto;
+}
+.fs-wrap {
+    width: 100%;
+    max-width: 1230px;
+    min-width: 1024px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+}
+.fs-wrap:before, .fs-wrap:after {
+    content: "";
+    display: table;
+}
+.clearfix {
+    zoom: 1;
+}
+.fs-dttrow {
+    margin: 0 -25px;
+}
+.clearfix:before, .clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.fs-dttcol1 {
+    padding-top: 20px;
+}
+.fs-dttcol1, .fs-dttcol2 {
+    float: left;
+    padding: 0 25px;
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+.fs-dtsl-gto {
+    margin: 10px 0;
+}
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
+}
+.fs-dtsl-gto .swiper-slide {
+    text-align: center;
+    width: 100%;
+}
+.swiper-slide {
+    -webkit-flex-shrink: 0;
+    /*-ms-flex: 0 0 auto;*/
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.fs-dtsl-gto .swiper-slide img {
+    display: inline-block;
+    max-height: 490px;
+}
+
+img {
+    vertical-align: middle;
+    max-height: 490px;
+    
+}
+img, object, embed {
+    max-width: 100%;
+}
+
+/*sub img*/
+
+.fs-dtsl-gth .swiper-wrapper {
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.fs-dtsl-gth .swiper-slide.is-selected {
+    border-bottom: 2px solid #cccccc;
+}
+.fs-dtsl-gth .swiper-slide {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    display: inline-block;
+    float: none;
+    width: auto;
+    border-bottom: 2px solid transparent;
+}
+.swiper-slide {
+    -webkit-flex-shrink: 0;
+    /*-ms-flex: 0 0 auto;*/
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.fs-dtsl-gth .swiper-slide img {
+    display: inline-block;
+    height: 40px;
+}
+
+/*info*/
+.fs-dttcol1, .fs-dttcol2 {
+    float: left;
+    padding: 0 25px;
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+.fs-dtrbox {
+    width: 100%;
+    max-width: 385px;
+    padding: 35px 0 10px;
+}
+.fs-dtrname {
+    font-size: 28px;
+    font-weight: 500;
+    color: #3d3d3d;
+    margin-bottom: 15px;
+}
+
+/*statuts*/
+
+.fs-dtrkm-tit {
+    height: 43px;
+    line-height: 43px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    color: #ffffff;
+    background: #34a105 repeat-x bottom left;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+.fs-dtrkm {
+    padding: 15px 20px;
+    font-size: 14px;
+    color: #737373;
+    border: 1px dashed #34a105;
+    border-top: 0;
+    background-color: #ffffff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.fs-dtrbi {
+    margin-bottom: 15px;
+}
+.fs-dtrr {
+    margin: 0 -3px;
+}
+.fs-dtrr:before, .fs-dtrr:after {
+    content: "";
+    display: table;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.fs-dtrc2 {
+    width: 50%;
+}
+.fs-dtrc {
+    float: left;
+    padding: 0 3px;
+    margin-bottom: 6px;
+}
+.fs-dtprice {
+    padding: 0 5px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d11010;
+}
+.fs-dtrr:after {
+    clear: both;
+}
+.fs-dtrr:before, .fs-dtrr:after {
+    content: "";
+    display: table;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*button*/
+
+.fs-dtrr {
+    margin: 0 -3px;
+}
+.fs-dtrr:before, .fs-dtrr:after {
+    content: "";
+    display: table;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.fs-dtrc2 {
+    width: 50%;
+}
+.fs-dtrc {
+    float: left;
+    padding: 0 3px;
+    margin-bottom: 6px;
+}
+.fs-mdtsmn, .fs-dtbtnmn {
+    color: #ffffff;
+    border: solid 1px #0774d3;
+    background: linear-gradient(to top, #076ED1 0%, #429DF1 100%);
+ 
+}
+.fs-mdtsb, .fs-dtbtn {
+    display: block;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+a, a:hover, a:focus, a:active {
+    outline: none;
+    text-decoration: none;
+    color: #000000;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/*btn mua tra gop*/
+.fs-dtrc2 {
+    width: 50%;
+}
+.fs-dtrc {
+    float: left;
+    padding: 0 3px;
+    margin-bottom: 6px;
+}
+.fs-dtbtngop {
+    color: #337ab7;
+    border: solid 1px #dfdfdf;
+    background: linear-gradient(to top, #EBEBEB 0%, #FFFFFF 100%);
+}
+.fs-dtrr:after {
+    clear: both;
+}

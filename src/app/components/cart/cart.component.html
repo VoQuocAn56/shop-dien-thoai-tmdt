@@ -1,0 +1,122 @@
+<p>cart works!</p>
+<!--
+<div>
+    <div class="list-items" *ngFor="let item of ListCartProduct">
+        <img src={{item.product.img}}>
+    </div>
+</div>
+-->
+
+<div class="gh-main">
+    <section class="fs-main">
+        <div class="f-wrap">
+            <div class="ghg-main">
+                <div class="ghg-tops clearfix">
+                    <p class="ghg-hds">GIỎ HÀNG CỦA BẠN <span>(<i class="countTotalCart"
+                                style="font-style: inherit">{{CountProduct}}</i> sản phẩm)</span></p>
+                    <a class="ghg-back" 
+                              href="/" 
+                              title="Trang chủ">Mua thêm sản phẩm khác</a>
+                </div>
+
+                <div class="fs-ghlul ">
+                    <div class="fs-ghli proitem">
+                        <div class="fs-ghltb" *ngFor="let item of ListCartProduct">
+                            <div class="fs-ghltd fs-ghltb1">
+                                <p class="fs-ghimg">
+                                    <a href="#" target="_blank">
+                                        <img src={{item.product.img}} alt="">
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="fs-ghcaif">
+                                <div class="fs-ghcatbs">
+                                    <div class="fs-ghltd fs-ghif">
+                                        <h3 class="fs-ghname"><a href="/dien-thoai/iphone-11-pro-64gb"
+                                                target="_blank">{{item.product.Name}}</a></h3>
+                                       
+                                    </div>
+                                    <div class="fs-ghltd fs-ghpri">
+                                        <p class="fs-ghpri1">{{item.product.Price}}.000 <sup>đ</sup></p>
+                                    </div>
+                                    <div class="fs-ghltd fs-ghplus">
+                                        <div class="fs-ghpltb clearfix">
+                                            <button class="fsghbtn" 
+                                                    (click)="OnClickReduceCount(item)">-</button>
+                                            <input class="fs-ghplip" 
+                                                   type="text" 
+                                                   readonly="readonly" 
+                                                   value= {{item.quantity}} 
+                                                   placeholder="0">
+                                            <button class="fsghbtn" 
+                                                    (click)="OnClickIncreaseCount(item)">+</button>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="total">
+                    <label class="total__txt">Tổng tiền</label>
+                    <strong>{{TotalCartProduct}}.000</strong>
+                </div>
+   
+                <form class="ghg-form" id="gh-form" novalidate="novalidate">
+                    <p class="ghg-formtit">Thông tin khách hàng</p>
+                    <ul class="gh-popfm">
+                        <li>
+                            <label>Họ và tên: <sup>*</sup></label>
+                            <div>
+                                <input type="text" name="uname" id="uname" placeholder="Nhập họ và tên">
+                            </div>
+                        </li>
+                        <li>
+                            <label>Số điện thoại: <sup>*</sup></label>
+                            <div>
+                                <input type="text" name="uphone" id="uphone" placeholder="Nhập số điện thoại">
+                            </div>
+                        </li>
+                        <li>
+                            <label>Email: <span>(không bắt buộc)</span></label>
+                            <div>
+                                <input type="text" name="uemail" id="uemail" placeholder="Nhập email">
+                                <p class="gh-popfm-nt">Chi tiết đơn hàng sẽ được gửi vào email</p>
+                            </div>
+                        </li>
+                        <li class="ghg-fbots">
+                            <label></label>
+                            <div>
+                                <div class="gfhrows">
+                                    <p>
+                                        <button type="button" class="fs-ghggbtn sp-goal-1090-c408-116-1570596729888"
+                                            id="ubtn">
+                                            <strong>Tiếp tục</strong>
+                                            <span>(Chọn hình thức nhận hàng)</span>
+                                        </button>
+                                    </p>
+                                    <p class="gfhror">Hoặc</p>
+                                    <p>
+                                        <button type="button" class="gh-btns1 sp-goal-1090-c408-116-1570596737976"
+                                            id="orderfast">
+                                            <strong>Đặt hàng luôn</strong>
+                                            <span>FPT Shop sẽ gọi cho quý khách</span>
+                                        </button>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+
+</div>

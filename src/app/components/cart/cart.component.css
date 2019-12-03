@@ -1,0 +1,324 @@
+.fs-main {
+    padding: 15px 0;
+    background: #f3f3f3;
+}
+
+.ghg-main {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.clearfix {
+    zoom: 1;
+}
+.ghg-tops {
+    padding: 20px 0 10px;
+    margin-bottom: 20px;
+
+}
+
+.fs-ghlul {
+    position: relative;
+    background: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.clearfix:before, .clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.fs-ghli {
+    position: relative;
+    border-bottom: 1px solid #e2e2e2;
+}
+.fs-ghltb {
+    display: table;
+    width: 100%;
+    padding: 15px;
+}
+.fs-ghltb1 {
+    width: 100px;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    background: #fff;
+}
+.fs-ghltd {
+    display: table-cell;
+    vertical-align: top;
+}
+/*chung*/
+
+a, a:hover, a:focus, a:active {
+    outline: none;
+    text-decoration: none;
+    color: #000000;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+/*--------------------------------*/
+.fs-ghcaif {
+    margin-left: 120px;
+    position: relative;
+}
+.fs-ghcatbs {
+    display: table;
+    width: 100%;
+    padding-right: 20px;
+}
+.fs-ghif {
+    padding-right: 10px;
+}
+
+.fs-ghname {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+/*price*/
+.fs-ghpri {
+    width: 150px;
+}
+
+.fs-ghpri1 {
+    font-size: 16px;
+    color: #3d3d3d;
+    margin-bottom: 5px;
+}
+/*cont*/
+.fs-ghplus {
+    width: 105px;
+}
+.fs-ghpltb {
+    width: 100%;
+    display: table;
+}
+
+.fsghbtn {
+    float: left;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #828282;
+    font-size: 22px;
+    background-color: #f8f8f8;
+    border: solid 1px #dfdfdf;
+}
+.fsghbtn i {
+    position: relative;
+    top: -2px;
+}
+
+.fs-ghplip {
+    float: left;
+    width: 40px;
+    height: 28px;
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+    border: solid 1px #e0e0e0;
+    border-left: none;
+    border-right: none;
+}
+
+/*exit*/
+.fs-ghdel {
+    position: absolute;
+    top: -8px;
+    right: 0;
+    cursor: pointer;
+    color: #b8b8b8;
+    font-size: 20px;
+}
+/*------*/
+.ghg-bl1 {
+    color: #494949;
+    padding: 10px 5px 0 15px;
+}
+/*-----*/
+.ghg-form {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.ghg-formtit {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d0021b;
+    margin-bottom: 25px;
+}
+.gh-popfm > li {
+    margin-bottom: 15px;
+    display: table;
+    width: 100%;
+}
+.gh-popfm > li:last-child {
+    margin-bottom: 0;
+}
+.gh-popfm > li > label {
+    display: table-cell;
+    width: 140px;
+    vertical-align: top;
+    font-weight: bold;
+    padding-top: 8px;
+}
+.gh-popfm > li > div {
+    display: table-cell;
+    vertical-align: top;
+}
+.gfhrows {
+    display: table;
+    width: 100%;
+}
+.gfhrows > p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.gfhrows > p > button {
+    display: block;
+    width: 100%;
+    height: 53px;
+    text-align: center;
+    padding: 1px 5px 0;
+    outline: 0;
+    border-radius: 2px;
+}
+.gfhrows > p > button strong {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 18px;
+    font-weight: bold;
+}
+.gfhrows > p > button span {
+    font-size: 11px;
+}
+.fs-ghggbtn strong, .fs-ghggbtn span {
+    color: #ffffff;
+}
+.fs-ghggbtn {
+    background-color: #d0021b;
+    border: solid 1px #d0021b;
+    margin-right: 10px;
+}
+.gfhror {
+    font-size: 11px;
+    color: #6f6f6f;
+    padding: 0 5px;
+}
+.gh-btns1 {
+    background-color: #ffffff;
+    border: solid 1px #cbcbcb;
+}
+.gh-btns1 strong {
+    color: #337ab7;
+}
+
+button, input, select, textarea {
+    margin: 0;
+}
+
+select, input, textarea {
+    font: 99% sans-serif;
+}
+
+input, select {
+    vertical-align: middle;
+}
+.gh-popfm > li > div > input {
+    height: 36px;
+    padding: 6px 12px;
+    width: 100%;
+    font-size: 13px;
+    border: solid 1px #cccccc;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.22);
+}
+
+.ghg-bot {
+    position: relative;
+    padding: 15px;
+    background: #ffffff;
+    border-bottom: 1px solid #cdcdcd;
+}
+.ghg-hds {
+    float: left;
+    font-size: 16px;
+    color: #3d3d3d;
+}
+.ghg-back {
+    float: right;
+    color: #337ab7;
+}
+
+.ghg-bor {
+    float: right;
+    padding: 2px 0;
+}
+
+.ghg-bor > li label {
+    width: 115px;
+    float: left;
+    text-align: left;
+}
+
+
+.ghg-bor > li span {
+    margin-left: 120px;
+    text-align: right;
+    display: block;
+}
+
+.ghg-br2{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+/*
+.ghg-br2 label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.ghg-br2 span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d0021b;
+}
+*/
+
+.ghg-br2__txt{
+    display: flex;
+}
+img{
+    max-width: 90px;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+.total__txt{
+    margin-right: 50px;
+    
+}
+

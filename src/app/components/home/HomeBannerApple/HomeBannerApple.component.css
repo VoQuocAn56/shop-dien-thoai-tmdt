@@ -1,0 +1,76 @@
+.banner-content{
+    max-width: 1519px;
+}
+.mainBanner a img{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.subBanner {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px ;
+}
+.subBanner1{
+    position: relative;
+    display: block;
+}
+.subBanner1-content{
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    padding-top: 10%
+}
+.subBanner1-content span{ 
+    font-size: 14px;
+    color: #e9f3ff;
+}
+.subBanner1-content p{ 
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.21;
+    margin-bottom: 5px;
+}
+.subBanner1::after{
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.26),rgba(0,0,0,.54));
+}
+
+.subBanner2{
+    position: relative;
+    display: block;
+}
+.subBanner2-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 10% ;
+}
+.subBanner2-content h4{
+    font-size: 30px;
+    font-weight: bold;
+    color: #303030;
+    margin-bottom: 5px;
+}
+.subBanner2-content p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #303030;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}

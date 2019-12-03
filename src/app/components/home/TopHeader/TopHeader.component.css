@@ -1,0 +1,25 @@
+.main-top-header{
+    height: 50px;
+    background: #1d1d1d;
+}
+.top-header-content{
+    display: flex;
+    justify-content: flex-end;
+}
+.top-header-menu{
+    margin: 0 auto;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: wheat;
+}
+li{
+    margin: 15px;
+}

@@ -1,0 +1,41 @@
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.fs-footer {
+    padding: 35px 0 15px;
+    background: #f3f3f3;
+}
+.fs-wrap{
+    max-width: 1519px;
+
+}
+.fs-ftmain{
+    display: inline-block;
+}
+.fs-ftmain{
+    display: flex;
+
+    justify-content: space-around;
+}
+
+a, a:hover, a:focus, a:active {
+    outline: none;
+    text-decoration: none;
+    color: #000000;
+}
+.fs-ftmn li a {
+    display: inline-block;
+    font-size: 13px;
+    color: #737373;
+}
+.fs-ftmn li h2 {
+    color: #212121;
+    font-weight: 600;
+    font-size: 13px;
+}
+.fs-ftmn li {
+    margin-bottom: 8px;
+}
+

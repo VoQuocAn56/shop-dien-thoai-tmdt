@@ -1,0 +1,86 @@
+<p>detail-iphone works! {{iphoneID}}</p>
+
+<div class="fs-dttop">
+    <div class="fs-wrap">
+        <div class="fs-dttrow clearfix">
+            <div class="fs-dttcol1" id="listPictureF">
+                <div class="fs-dtsl-gto swiper-container gallery-top swiper-container-horizontal">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-active" style="width: 575px; margin-right: 10px;">
+                            <img src={{detailIphone.img}}>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="fs-dtsl-gth swiper-container gallery-thumbs swiper-container-horizontal swiper-container-free-mode">
+                    <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                        <div class="swiper-slide is-selected swiper-slide-active">
+                            <img src={{detailIphone.img}}>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--Infor-->
+            <div class="fs-dttcol2">
+                <div class="fs-dtrbox">
+                    <h1 class="fs-dtrname" id="nameIphone">{{detailIphone.Name}}</h1>
+                    <!--Status Product-->
+                    <div class="status-product fs-dtrbi"></div>
+                    <div class="fs-dtrbi">
+                        <p class="fs-dtrkm-tit">Ưu đãi/ Khuyến mãi:</p>
+                        <div class="fs-dtrkm">
+                            <ul>
+                                <p class="tkmspbb">Khách hàng chọn 1 trong 3 khuyến mại sau:</p>
+                                <p class="tkmspbb">KM1:</p>
+                                <ul>
+                                    <li>Trả góp 0% chỉ từ 1,653,000đ/tháng</li>
+                                </ul>
+                                <p class="tkmspbb">KM2:</p>
+                                <ul>
+                                    <li>Tặng PMH 1,000,000đ</li>
+                                </ul>
+                                <p class="tkmspbb">KM3:</p>
+                                <ul>
+                                    <li>Thu cũ lên đời trả trước 0đ, chỉ từ 980,000đ/tháng </li>
+                                </ul>
+                                <p class="tkmspbb">Khách hàng được khuyến mại thêm:</p>
+                                <ul>
+                                    <li>Giảm thêm 500,000đ khi mua kèm Airpods</li>
+                                </ul>
+                                <ul>
+                                    <li>Giảm thêm 500,000đ khi thanh toán 100% giá trị đơn hàng qua VNPay-QR</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <!--Gia-->
+                    <div class="fs-dtrbi">
+                        <ul class="fs-dtrr">
+                            <li class="fs-dtrc fs-dtrc2">
+                                <p class="fs-dtprice totalPice" data-price="30990000.0000">Giá :
+                                    <strong>{{detailIphone.Price}}.000đ</strong></p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="fs-dtrbi">
+                        <ul class="fs-dtrr">
+                            <li class="fs-dtrc fs-dtrc2 build-order">
+                                <a class="fs-dtbtn fs-dtbtnmn" 
+                                   id="btn-order" 
+                                   (click)="OnBuyProduct()" title="">MUA NGAY</a>
+                            </li>
+                            <li class="fs-dtrc fs-dtrc2 btn-tgfs">
+                                <a class="fs-dtbtn fs-dtbtngop"
+                                    href="https://fptshop.com.vn/dien-thoai/iphone-11-pro-64gb/511282/tra-gop"
+                                    title="">MUA TRẢ GÓP</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
