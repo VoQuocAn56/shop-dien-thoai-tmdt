@@ -10,6 +10,7 @@ export class HomeAppleComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

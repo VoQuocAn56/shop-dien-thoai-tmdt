@@ -1,14 +1,8 @@
 <div class="main-top-header">
   <div class="top-header-content">
     <ul class="top-header-menu">
-      <li class=""><a (click)="OnGotoHomeIphone()" title="">iPhone</a></li>
-      <li class=""><a (click)="OnGotoHomeIpab()" title="">iPad</a></li>
-      <li class=""><a (click)="OnGoToHomeMac()" title="">Mac</a></li>
-      <li class=""><a href="#" title="">Apple Watch</a></li>
-      <li class=""><a href="#" title="">Phụ kiện</a></li>
-      <li class=""><a href="#" title="">Thông tin</a></li>
-      <li class=""><a href="#" title="">Khuyến mãi</a></li>
-      <li class=""><a href="#" title="">VIP Member</a></li>
+      <li><a (click)="OnGoToMainHome()">Trang chủ</a></li>
+      <li *ngFor="let item of ListCatogories"><a (click)="OnGotoHomeProduct(item)" title="">{{item.CategoryName}}</a></li>
     </ul>
     <div class="top-header-logo-apple">
       <img src="../../../../assets/logo/premium.png">
