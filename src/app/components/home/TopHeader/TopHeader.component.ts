@@ -28,6 +28,7 @@ export class TopHeaderComponent implements OnInit {
     this.categoryService.GetCategory().subscribe(data =>{
       this.ListCatogories = data;
     })
+   
   }
 
   //router

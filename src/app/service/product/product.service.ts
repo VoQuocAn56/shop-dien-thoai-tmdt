@@ -15,7 +15,7 @@ export class ProductService {
 
   GetIphoneProductFromService():Observable<ProductModel[]>{
     const CategoryIphoneID = "CT01"
-    return this.httpClient.get<ProductModel[]>(this.RootURL + "api/Productapi/Product/GetIphoneProduct/" + CategoryIphoneID).pipe(
+    return this.httpClient.get<ProductModel[]>(this.RootURL + "api/Product/GetProductByCategoryID/" + CategoryIphoneID).pipe(
       tap(() => console.log("Get iphone product success")),
       catchError((err:any) => of)
     )               

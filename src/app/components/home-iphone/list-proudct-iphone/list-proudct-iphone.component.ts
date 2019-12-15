@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
-import {IphoneService} from '../../../service/Iphone.service';
 import {ProductModel} from '../../../model/ProductModel';
+import {ProductService} from '../../../service/product/product.service';
+
 @Component({
   selector: 'app-list-proudct-iphone',
   templateUrl: './list-proudct-iphone.component.html',
@@ -9,13 +10,13 @@ import {ProductModel} from '../../../model/ProductModel';
 })
 export class ListProudctIphoneComponent implements OnInit {
 
-  public ListIphone:ProductModel[];
+  ListIphone:ProductModel[];
   public ListCount:any = [1,2,3,4]; 
   
   constructor(
     private router:Router, 
     private activatedRoute:ActivatedRoute,
-    private iphoneService:IphoneService,
+    private productService:ProductService
   ) { }
 
   ngOnInit() {
@@ -23,10 +24,14 @@ export class ListProudctIphoneComponent implements OnInit {
     this.GetAllProductIphone();
   }
   GetAllProductIphone(){
-    this.ListIphone = this.iphoneService.GetAll();
+    this.productService.GetIphoneProductFromService().subscribe(data => {
+      this.ListIphone = data
+    });
+    console.log(this.ListIphone);
   }
 
-  onGoToDetailIphone(item){
-    this.router.navigate(['./detail',item.ID],{relativeTo:this.activatedRoute});
+  onGoToDetailIphone(item: ProductModel){
+    
+    this.router.navigate(['./detail',item.ProductID],{relativeTo:this.activatedRoute});
   }
 }
