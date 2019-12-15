@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import {IphoneModel} from '../model/IphoneModel';
+import {ProductModel} from '../model/ProductModel';
 
 @Injectable({
   providedIn: 'root'
 })
 export class IphoneService {
-  public listIphone: IphoneModel[] = [
+  /*
+  public listIphone: ProductModel[] = [
     {
       ID:1,
       Name: "iPhone 11 Pro 64GB", 
@@ -35,12 +36,13 @@ export class IphoneService {
       Screen:'5.8 inchs',
       img:'../../../assets/product/Iphone/iphone11promax.png'
     },
-    */
+   
   ];
-
+*/
   constructor() { }
 
-  GetAll():IphoneModel[]{
-    return this.listIphone;
+  GetAll():ProductModel[]{
+    return null;
   }
+
 }

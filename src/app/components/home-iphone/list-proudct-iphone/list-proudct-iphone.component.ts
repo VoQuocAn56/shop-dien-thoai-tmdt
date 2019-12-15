@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
 import {IphoneService} from '../../../service/Iphone.service';
-import {IphoneModel} from '../../../model/IphoneModel';
+import {ProductModel} from '../../../model/ProductModel';
 @Component({
   selector: 'app-list-proudct-iphone',
   templateUrl: './list-proudct-iphone.component.html',
@@ -9,7 +9,7 @@ import {IphoneModel} from '../../../model/IphoneModel';
 })
 export class ListProudctIphoneComponent implements OnInit {
 
-  public ListIphone:IphoneModel[];
+  public ListIphone:ProductModel[];
   public ListCount:any = [1,2,3,4]; 
   
   constructor(

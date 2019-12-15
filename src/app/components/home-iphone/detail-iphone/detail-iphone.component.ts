@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router, ActivatedRoute, ParamMap} from '@angular/router';
-import { IphoneModel } from 'src/app/model/IphoneModel';
+import { ProductModel } from 'src/app/model/ProductModel';
 import {IphoneService} from '../../../service/Iphone.service';
 import {CartModel} from '../../../model/CartModel';
 
@@ -10,9 +10,9 @@ import {CartModel} from '../../../model/CartModel';
   styleUrls: ['./detail-iphone.component.css']
 })
 export class DetailIphoneComponent implements OnInit {
-  public iphoneID: number;
-  public ListIphones: IphoneModel[];
-  public detailIphone: IphoneModel;
+  public iphoneID: string;
+  public ListIphones: ProductModel[];
+  public detailIphone: ProductModel;
   
   public totalDetailIphone: number = 0;
 
@@ -24,7 +24,7 @@ export class DetailIphoneComponent implements OnInit {
 
   ngOnInit() {
     this.activatedRoute.paramMap.subscribe((params: ParamMap) => {
-      let id = parseInt(params.get('id'));
+      let id = params.get('id');
       this.iphoneID = id;
     })
     
@@ -36,16 +36,16 @@ export class DetailIphoneComponent implements OnInit {
     this.SaveProductTolocalStorage(this.detailIphone);
   }
 
-  GetInfoIphoneByID(id:number){
+  GetInfoIphoneByID(id:string){
     for(let item of this.ListIphones){
-      if(item.ID == id){
+      if(item.ProductID == id){
         this.detailIphone = item
       }
     }
     return null
   }
 
-  SaveProductTolocalStorage(Product:IphoneModel){
+  SaveProductTolocalStorage(Product:ProductModel){
     let item:CartModel = {
       product: Product,
       quantity: 1,

@@ -1,4 +1,4 @@
-import { IphoneModel } from './IphoneModel';
+import { ProductModel } from './ProductModel';
 
 export class CartModel {
     product:any;
