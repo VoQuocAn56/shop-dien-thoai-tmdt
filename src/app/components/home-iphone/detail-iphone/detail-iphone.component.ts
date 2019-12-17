@@ -31,6 +31,7 @@ export class DetailIphoneComponent implements OnInit {
     this.ListIphones = this.iphoneService.GetAll();
     this.GetInfoIphoneByID(this.iphoneID);
   }
+  
   OnBuyProduct(){
     this.router.navigate(['/cart'])
     this.SaveProductTolocalStorage(this.detailIphone);

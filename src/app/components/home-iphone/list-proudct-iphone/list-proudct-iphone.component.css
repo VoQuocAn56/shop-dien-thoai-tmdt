@@ -22,6 +22,7 @@
     cursor: pointer;
 }
 
+/*
 .item-content{
     display: flex;
     justify-content: center;
@@ -30,12 +31,46 @@
     flex-wrap: wrap;
 }
 
+.item{
+    display: flex;
+}
+
+.evenItem{
+    flex-direction: row-reverse;
+}
+/*
+.last-list{
+    flex-direction: column;
+    align-items: center !important;
+}
+.last-Item{
+   flex-direction: row-reverse !important;
+   
+}
+
+.content{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.content-odd{
+    margin-left: 100px;
+}
+.content-even{
+    margin-right: 100px;
+}
+*/
+
+
 .ctname a{
     color: black;
 }
 
 .fs-apbtn{
-    display: block;
+    display: inline-block;
     padding: 7px 29px;
     text-align: center; 
     font-size: 16px;
@@ -57,45 +92,45 @@ img{
     height: auto;
     margin: 10px;
 }
-
-.UpdateColor{
-    background: #f2f2f2;
-  
+/*so chan*/
+.EvenContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.EvenItem{
+    display: inline-flex;
+}
+.OddItem{
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+/*so le*/
+.OddCotent{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .list-items{
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     padding: 100px 0;
 }
-.item{
-    display: flex;
+.content{
+    margin: 50px;
 }
 
-.evenItem{
-    flex-direction: row-reverse;
-}
-/*
-.last-list{
-    flex-direction: column;
-    align-items: center !important;
-}
-.last-Item{
-   flex-direction: row-reverse !important;
-   
-}
-*/
-.content{
+.wrap{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
-.content-odd{
-    margin-left: 100px;
-}
-.content-even{
-    margin-right: 100px;
+
+.UpdateColor{
+    background: #f2f2f2;
 }
